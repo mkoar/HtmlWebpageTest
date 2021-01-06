@@ -4,15 +4,15 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-        <link rel="stylesheet" href="./css/new.min.css"> 
-        
-        <link rel="stylesheet" href="./css/prt.css"> 
+        <link rel="stylesheet" href="./css/new.min.css">
+
+        <link rel="stylesheet" href="./css/prt.css">
         <title>FCNT座席管理システム</title>
     </head>
 
 <body>
 
-    <form name="form1" action="https://fcnt-seat-sw.appspot.com/main_process.php" method="POST"> 
+    <form name="form1" action="https://fcnt-seat-sw.appspot.com/main_process.php" method="POST">
         <table align="left" border="1">
         <tbody>
         <tr>
@@ -27,7 +27,7 @@
                 </div>
             </td>
         </tr>
-       
+
         <tr>
             <td class="work_td">
                 <div class='que_row'>
@@ -40,17 +40,17 @@
                             <label class='work_seat' for="seat">出社</label>
                             <input id="seat_num" type="text" name="seat" placeholder="座席番号を入力">
                         </div>
-                        
+
                         <div>
                             <input id="tele" type="radio" name="work" value="2">
                             <label class='work_others' for="tele">テレワーク</label>
                         </div>
-                    
+
                         <div>
                             <input id="b_trip" type="radio" name="work" value="3">
                             <label class='work_others' for="b_trip">社外出張</label>
                         </div>
-                        
+
                         <div>
                             <input id="time_off" type="radio" name="work" value="3">
                             <label class='work_others' for="time_off">休暇</label>
@@ -59,7 +59,7 @@
                 </div>
             </td>
         </tr>
-         
+
         <tr>
             <td class="cond_td">
                 <div class="que_row">
@@ -68,12 +68,12 @@
                     </div>
                     <div class="ans_div">
                         <input type="date" name="date" required pattern="\d{4}-\d{2}-\d{2}" value="2021-01-01">
-                        <input type="time" name="time" step="1" required pattern="[0-9]{2}:[0-9]{2}:[0-9]{2}" value="01:01:01">
+                        <input type="text" name="time" required pattern="[0-9]{2}:[0-9]{2}:[0-9]{2}" value="01:01:01">
                     </div>
                 </div>
             </td>
         </tr>
-      
+
         <tr>
             <td class="cond_td">
                 <div class='que_row'>
@@ -142,11 +142,11 @@
         <tr>
         <input type="hidden" name="sid" value="1696">
         </tr>
-       
+
         </tbody>
         </table>
         <input id="submit_button" type="submit" value="登録">
     </form>
-          
+
 
 </body></html>

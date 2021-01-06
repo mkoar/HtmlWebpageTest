@@ -41,11 +41,16 @@
   width: 170px;
 }
 
+.ans_div input:focus {
+  border-color: #2b6abd;
+  border-width: 2px;
+}
+
 .ans_div input[type=radio]{
   display: none;
 }
 
-.ans_div input[type=time]{
+.ans_div input[name=time]{
   width: 120px;
 }
 
