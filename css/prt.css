@@ -17,7 +17,7 @@ input {
 /* セル設定 (勤務スタイル用) */
 .work_td{
   vertical-align: middle;
-  height: 160px;
+  height: 170px;
 }
 
 /* 疑似テーブル */
@@ -30,7 +30,8 @@ input {
   float: left;
   vertical-align: middle;
   padding-left: 20px;
-  width: 120px; 
+  width: 120px;
+  height: 38px;
   font-size: 14pt;
   font-weight: bold;
 }
@@ -38,6 +39,10 @@ input {
 /* 回答サイド (div) */
 .ans_div{
   float: right;
+}
+
+.ans_div input[type=radio]{
+  display: none;
 }
 
 /***************************/
@@ -89,11 +94,6 @@ input {
 .cond_ans_div label {
   padding: 10px 25px 10px 25px;
   margin-right: 20px;
-}
-
-/* (input) */
-.cond_ans_div input {
-    display: none;
 }
 
 /* 登録ボタン */
