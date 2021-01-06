@@ -1,13 +1,6 @@
 #seat_num {
   border-color: #c0c0c0;
-  width: 170px;
 }
-
-input {
-  border-color: #5294eb;
-  border-width: 2px;
-}
-
 
 /* セル設定 */
 .cond_td{
@@ -40,6 +33,12 @@ input {
 /* 回答サイド (div) */
 .ans_div{
   float: right;
+}
+
+.ans_div input {
+  border-color: #5294eb;
+  border-width: 2px;
+  width: 170px;
 }
 
 .ans_div input[type=radio]{
