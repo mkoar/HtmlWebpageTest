@@ -1,0 +1,106 @@
+#seat_num {
+  border-color: #c0c0c0;
+}
+
+input {
+  border-color: #5294eb;
+  border-width: 2px;
+}
+
+
+/* セル設定 */
+.cond_td{
+  vertical-align: middle;
+  height: 40px;
+}
+
+/* セル設定 (勤務スタイル用) */
+.work_td{
+  vertical-align: middle;
+  height: 160px;
+}
+
+/* 疑似テーブル */
+.que_row {
+    display:table;
+}
+
+/* 項目 (div) */
+.item_label{
+  float: left;
+  vertical-align: middle;
+  padding-left: 20px;
+  width: 120px; 
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+/* 回答サイド (div) */
+.ans_div{
+  float: right;
+}
+
+/***************************/
+/***   回答選択ボタン用   ***/
+/***************************/
+.que_row label {
+  font-weight: bold;
+  display: inline-block;
+  color: #646464;
+  background: #efefef;
+  border-radius: 5px;
+  cursor :pointer;
+}
+
+.que_row label:hover {
+    color: #ffffff;
+    background: #5294eb;
+}
+
+.que_row input:checked + label {
+  color: #ffffff;
+  background: #2b6abd;
+}
+
+/* 勤務形態用 (label) */
+.work_ans_div label {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.work_seat{
+  margin-right: 10px;
+  width: 70px;
+}
+
+.work_others{
+  width: 300px;
+}
+
+/* (input) */
+#seat:checked ~ input {
+  border-style: solid;
+  border-color: #5294eb;
+  border-width: 2px;
+}
+
+/* 調整さん入力用 (label) */
+.cond_ans_div label {
+  padding: 10px 25px 10px 25px;
+  margin-right: 20px;
+}
+
+/* (input) */
+.cond_ans_div input {
+    display: none;
+}
+
+/* 登録ボタン */
+#submit_button {
+    padding: 10px 50px 10px 50px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #2b6abd;
+    border-radius: 5px;
+}

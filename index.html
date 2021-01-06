@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://fcnt-seat-sw.appspot.com/main.php -->
+<html lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <link rel="stylesheet" href="./css/new.min.css"> 
+        
+        <link rel="stylesheet" href="./css/prt.css"> 
+        <title>FCNT座席管理システム</title>
+    </head>
+
+<body>
+
+    <form name="form1" action="https://fcnt-seat-sw.appspot.com/main_process.php" method="POST"> 
+        <table align="left" border="1">
+        <tbody>
+        <tr>
+            <td class="cond_td">
+                <div class="que_row">
+                    <div class='item_label'>
+                        従業員番号
+                    </div>
+                    <div class='ans_div'>
+                        <input type="number" name="username" placeholder="半角6桁従業員番号" value="">
+                    </div>
+                </div>
+            </td>
+        </tr>
+       
+        <tr>
+            <td class="work_td">
+                <div class='que_row'>
+                    <div class='item_label'>
+                        勤務
+                    </div>
+                    <div class='ans_div work_ans_div'>
+                        <div>
+                            <input id="seat" type="radio" name="work" value="1" checked="checked">
+                            <label class='work_seat' for="seat">出社</label>
+                            <input id="seat_num" type="text" name="seat" placeholder="座席番号を入力">
+                        </div>
+                        
+                        <div>
+                            <input id="tele" type="radio" name="work" value="2">
+                            <label class='work_others' for="tele">テレワーク</label>
+                        </div>
+                    
+                        <div>
+                            <input id="b_trip" type="radio" name="work" value="3">
+                            <label class='work_others' for="b_trip">社外出張</label>
+                        </div>
+                        
+                        <div>
+                            <input id="time_off" type="radio" name="work" value="3">
+                            <label class='work_others' for="time_off">休暇</label>
+                        </div>
+                    </span>
+                </div>
+            </td>
+        </tr>
+         
+        <tr>
+            <td class="cond_td">
+                <div class="que_row">
+                    <div class="item_label">
+                        時刻
+                    </div>
+                    <div class="ans_div">
+                        <input type="date" name="date" required pattern="\d{4}-\d{2}-\d{2}" value="2021-01-01">
+                        <input type="time" name="time" step="1" required pattern="[0-9]{2}:[0-9]{2}:[0-9]{2}" value="01:01:01">
+                    </div>
+                </div>
+            </td>
+        </tr>
+      
+        <tr>
+            <td class="cond_td">
+                <div class='que_row'>
+                    <div class='item_label'>
+                        熱
+                    </div>
+                    <div class='ans_div cond_ans_div'>
+                        <input id="fever_ok" type="radio" name="fever" value="1" checked="checked">
+                        <label for="fever_ok">なし</label>
+
+                        <input id="fever_ng" type="radio" name="fever" value="2">
+                        <label for="fever_ng">あり</label>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="cond_td">
+                <div class='que_row'>
+                    <div class='item_label'>
+                        咳
+                    </div>
+                    <div class='ans_div cond_ans_div'>
+                        <input id="cough_ok" type="radio" name="cough" value="1" checked="checked">
+                        <label for="cough_ok">なし</label>
+
+                        <input id="cough_ng" type="radio" name="cough" value="2">
+                        <label for="cough_ng">あり</label>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="cond_td">
+                <div class='que_row'>
+                    <div class='item_label'>
+                        倦怠感
+                    </div>
+                    <div class='ans_div cond_ans_div'>
+                        <input id="tired_ok" type="radio" name="tired" value="1" checked="checked">
+                        <label for="tired_ok">なし</label>
+
+                        <input id="tired_ng" type="radio" name="tired" value="2">
+                        <label for="tired_ng">あり</label>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="cond_td">
+                <div class='que_row'>
+                    <div class='item_label'>
+                        暗証番号
+                    </div>
+                    <div class='ans_div'>
+                        <input type="password" name="inputpass" value="">
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+
+        <tr>
+        <input type="hidden" name="sid" value="1696">
+        </tr>
+       
+        </tbody>
+        </table>
+        <input id="submit_button" type="submit" value="登録">
+    </form>
+          
+
+</body></html>
