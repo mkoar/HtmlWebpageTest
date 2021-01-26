@@ -4,13 +4,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
         <link rel="stylesheet" href="./css/new.min.css">
-
         <link rel="stylesheet" href="./css/prt.css">
         <title>FCNT座席管理システム</title>
     </head>
 
 <body>
-
+  <div id="main">
     <form name="form1" action="" method="POST">
         <table align="left" border="1">
         <tbody>
@@ -34,7 +33,7 @@
                         勤務
                     </div>
                     <div class='ans_div work_ans_div'>
-                        <div>
+                        <div class='seat_num_div'>
                             <input id="seat" type="radio" name="work" value="1" checked="checked">
                             <label class='work_seat' for="seat">出社</label>
                             <input id="seat_num" type="text" name="seat" placeholder="座席番号を入力">
@@ -146,6 +145,6 @@
         </table>
         <input id="submit_button" type="submit" value="登録">
     </form>
-
+  <div>
 
 </body></html>

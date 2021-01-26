@@ -55,6 +55,10 @@
   display: none;
 }
 
+.ans_div input[name=date]{
+  width: 150px;
+}
+
 .ans_div input[name=time]{
   width: 120px;
 }
@@ -94,7 +98,7 @@
 }
 
 .work_others{
-  width: 300px;
+  width: 270px;
 }
 
 /* (input) */
@@ -117,4 +121,49 @@
     color: #ffffff;
     background: #2b6abd;
     border-radius: 5px;
+}
+
+@media (max-width:340px){
+    .item_label{
+      float: left;
+      vertical-align: middle;
+      padding-left: 10px;
+      width: 120px;
+      height: 30px;
+      font-size: 11pt;
+      font-weight: bold;
+    }
+    .note_span{
+      font-size: 5pt;
+      margin-left: 5px;
+    }
+    
+    .ans_div input[name=date]{
+      width: 90%;
+    }
+    
+    .ans_div input[name=time]{
+      width: 90%;
+    }
+    
+    .work_seat{
+      margin-right: 10px;
+      width: 25%;
+    }
+    #seat_num{
+      width: 55%;
+    }
+    .work_others{
+      width: 90%;
+    }
+}
+
+@media (max-width:275px) { 
+    /*　画面サイズが480pxからはここを読み込む　*/
+    body{
+      overflow-x: scroll;
+    }
+    #main{
+      width: 200px;
+    }
 }
