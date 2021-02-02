@@ -7,6 +7,31 @@
   margin-left: 5px;
 }
 
+.com_style input[type=button]{
+    display: inline-block;
+    padding: 10px 50px 10px 50px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #2b6abd;
+    border-radius: 5px;
+}
+.com_style input[type=button]:hover{
+  background-color: #1a5199;
+}
+
+.com_style_calm input[type=button]{
+    display: inline-block;
+    padding: 7px 30px 7px 30px;
+    font-size: 11pt;
+    color: #ffffff;
+    background: #497cbf;
+    border-radius: 5px;
+}
+
+.com_style_calm input[type=button]:hover{
+  background-color: #1a5199;
+}
+
 /* セル設定 */
 .cond_td{
   vertical-align: middle;
